@@ -54,7 +54,7 @@ const Hero = () => {
             <div className="w-64 h-64 md:w-80 md:h-80 bg-gradient-to-br from-portfolio-purple to-portfolio-lightpurple rounded-full flex items-center justify-center shadow-xl">
               <div className="w-60 h-60 md:w-76 md:h-76 bg-white rounded-full flex items-center justify-center overflow-hidden">
                 <img
-                  src="/placeholder.svg"
+                  src="/lovable-uploads/aa60ad56-341a-4780-b5c9-3eda87b2ea1d.png"
                   alt="Pratyush Pothal"
                   className="w-full h-full object-cover"
                 />
