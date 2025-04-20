@@ -1,10 +1,13 @@
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Github } from "lucide-react";
 import { 
   Card, 
   CardContent, 
   CardDescription, 
   CardHeader, 
-  CardTitle 
+  CardTitle,
+  CardFooter
 } from "@/components/ui/card";
 
 const Projects = () => {
@@ -39,7 +42,8 @@ const Projects = () => {
       date: "Jun 24 - Jul 24",
       technologies: ["MongoDB", "Express", "React", "Node.js"],
       highlights: ["Full-Stack Development", "Database Design", "User Authentication"],
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6"
+      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
+      githubLink: "https://github.com/PRATYUSH-POTHAL/Project-Work/tree/main/NoteApp/Application"
     }
   ];
 
@@ -83,6 +87,19 @@ const Projects = () => {
                   ))}
                 </div>
               </CardContent>
+              {project.githubLink && (
+                <CardFooter className="pt-0">
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    className="w-full"
+                    onClick={() => window.open(project.githubLink, '_blank')}
+                  >
+                    <Github className="w-4 h-4 mr-2" />
+                    View Project
+                  </Button>
+                </CardFooter>
+              )}
             </Card>
           ))}
         </div>
