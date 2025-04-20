@@ -1,6 +1,5 @@
 
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import { 
   Card, 
   CardContent, 
@@ -9,7 +8,6 @@ import {
   CardHeader, 
   CardTitle 
 } from "@/components/ui/card";
-import { Github } from "lucide-react";
 
 const Projects = () => {
   const projects = [
@@ -19,9 +17,7 @@ const Projects = () => {
       date: "Jun 24 - Jul 24",
       technologies: ["HTML", "CSS", "JavaScript"],
       highlights: ["Frontend Design", "Interactivity", "User Experience"],
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f",
-      github: "#",
-      demo: "#"
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f"
     },
     {
       title: "Number Guessing Game",
@@ -29,9 +25,7 @@ const Projects = () => {
       date: "Nov 22 - Dec 22",
       technologies: ["Python", "Random Module"],
       highlights: ["Game Logic", "User Interaction", "Randomization"],
-      image: "https://images.unsplash.com/photo-1473091534298-04dcbce3278c",
-      github: "#",
-      demo: "#"
+      image: "https://images.unsplash.com/photo-1473091534298-04dcbce3278c"
     },
     {
       title: "MERN Stack Project",
@@ -39,9 +33,7 @@ const Projects = () => {
       date: "Jun 24 - Jul 24",
       technologies: ["MongoDB", "Express", "React", "Node.js"],
       highlights: ["Full-Stack Development", "Database Design", "User Authentication"],
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
-      github: "#",
-      demo: "#"
+      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6"
     }
   ];
 
@@ -85,17 +77,7 @@ const Projects = () => {
                   ))}
                 </div>
               </CardContent>
-              <CardFooter className="flex justify-between border-t pt-4">
-                <Button variant="outline" size="sm" asChild>
-                  <a href={project.github}>
-                    <Github className="mr-2 h-4 w-4" />
-                    Code
-                  </a>
-                </Button>
-                <Button size="sm" className="bg-portfolio-purple hover:bg-portfolio-darkpurple" asChild>
-                  <a href={project.demo}>Live Demo</a>
-                </Button>
-              </CardFooter>
+              {/* Removed CardFooter section with GitHub and Demo buttons */}
             </Card>
           ))}
         </div>
