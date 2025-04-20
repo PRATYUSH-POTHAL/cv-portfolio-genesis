@@ -32,10 +32,7 @@ const About = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-portfolio-purple rounded-lg flex items-center justify-center shadow-lg">
-                <span className="text-white text-4xl font-bold">2+</span>
-                <span className="text-white text-sm absolute bottom-4">Years Exp</span>
-              </div>
+              {/* Removed the 2+ Years Exp section */}
             </div>
           </div>
         </div>
