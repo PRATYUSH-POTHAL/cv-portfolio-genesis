@@ -4,8 +4,8 @@ import {
   Database, 
   FileText, 
   Calendar,
-  Git, 
-  Github
+  Github,
+  GitBranch
 } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -170,7 +170,7 @@ const Skills = () => {
             </div>
             <div className="mt-8 flex items-center justify-around">
               <div className="flex flex-col items-center">
-                <Git size={30} className="text-portfolio-purple mb-2" />
+                <GitBranch size={30} className="text-portfolio-purple mb-2" />
                 <span className="text-sm">Git</span>
               </div>
               <div className="flex flex-col items-center">

@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { GitHub, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -40,7 +40,7 @@ const Hero = () => {
                 rel="noopener noreferrer"
                 className="text-gray-600 hover:text-portfolio-purple transition-colors"
               >
-                <GitHub size={24} />
+                <Github size={24} />
               </a>
               <a 
                 href="mailto:pratyushpothal@gmail.com" 
