@@ -1,16 +1,22 @@
-
 import { Badge } from "@/components/ui/badge";
 import { 
   Card, 
   CardContent, 
   CardDescription, 
-  CardFooter, 
   CardHeader, 
   CardTitle 
 } from "@/components/ui/card";
 
 const Projects = () => {
   const projects = [
+    {
+      title: "VirtuWalls Website",
+      description: "Designed web application that offers transform spaces with VR AR experiences and user friendly by GoDaddy.",
+      date: "Dec 23 - Jun 24",
+      technologies: ["GoDaddy", "VR", "AR", "Web Design"],
+      highlights: ["Virtual Reality", "Augmented Reality", "User Experience", "Space Transformation"],
+      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b"
+    },
     {
       title: "Food Delivery Website",
       description: "Designed and developed a website using HTML and CSS for seamless user experience. Used JavaScript to implement dynamic features like menu filtering, cart updates, and order summary.",
@@ -77,7 +83,6 @@ const Projects = () => {
                   ))}
                 </div>
               </CardContent>
-              {/* Removed CardFooter section with GitHub and Demo buttons */}
             </Card>
           ))}
         </div>
